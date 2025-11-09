@@ -1,4 +1,4 @@
-
+/*styling header*/
 header{
     background-color:rgb(0, 0, 128);
     color:rgb(255, 255, 255);
@@ -7,14 +7,14 @@ header{
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');           /*applying imported font to body.*/
 body{
     font-family: 'roboto',sans-serif;
     
     
 }
 
-
+/*styling navigation*/
 nav{
   background-color:rgb(0, 0, 128);
   
@@ -28,18 +28,13 @@ nav a{
     text-decoration:none;
   }  
 
-    
-
-
+/*adding hovering effect to anchor elements in navigation*/    
 nav a:hover{
     background-color: rgb(240, 248, 255);
-    color:rgb(225, 18, 156);
-    
-   
-    
+    color:rgb(225, 18, 156);    
 }
     
-
+/*using padding , margin ,border to section*/
 section {
   padding: 20px ;
   margin: 5px ;
@@ -47,34 +42,32 @@ section {
   text-align: center;
 }
 
-
+/*styling table and positioning it in center using margin*/
 table{
     border:1px solid blue;
     padding : 5 px;
     margin:auto;
-
 }
 table th{
     background-color:blue;
 }
-
+/*styling project*/
 li{
     padding:20px;
     margin:5px;
     border:solid 1px black;
   }
+/*styling button */
 button{
     background-color: rgb(0, 0, 255);
-    
-    
 }
+/*applying hovering effects*/
 button:hover{
     color:rgb(255, 0, 191);
     padding: 10px;
     border-radius: 10px;
-
 }
-
+/*styling back to top buttton and  positioning it fixed */
 a[href="#top"]{
     position: fixed;
     bottom : 20px;
@@ -86,10 +79,11 @@ a[href="#top"]{
 
 
 }
-
+/*applying box-shadow and border-radius*/
 img{
     box-shadow :10px rgb(0,0,0);
     border-radius: 1000px;
     
 }
+
 
