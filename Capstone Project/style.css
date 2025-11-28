@@ -1,0 +1,343 @@
+/*import google font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'roboto', sans-serif;
+    
+}
+/*body style*/
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: rgb(255, 64, 129); /* pink accent */
+    font-size: 1.8rem;
+}
+/*nav*/
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #555;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: all 0.25s ease;
+}
+/*nav hover effect*/
+nav a:hover {
+    color:rgb(231, 51, 112);
+}
+
+/*hero*/
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to right, #ffe6f0, #fff);
+    animation-name: slideIn;                                                /*slide in animation in hero*/
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+
+}
+
+#hero .h {
+    max-width: 50%;
+}
+
+#hero h1 {
+    font-size: 2.8rem;
+    color: rgb(231, 51, 112);
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: rgb(85, 85, 85);
+}
+/*cta button*/
+.cta-btn {
+    background-color: rgb(231, 51, 112);
+    color: rgb(255, 255, 255);
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+/*cta button hover effect*/
+.cta-btn:hover {
+    background-color: rgb(231, 51, 112);
+}
+
+#hero img {
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+/*section styling*/
+section {
+    padding: 50px;
+}
+
+
+/*search bar*/
+#search-bar form {
+    display: flex;           /* horizontal layout */
+    flex-direction: row;     /* ensure single row */
+    align-items: center;     /* vertical center alignment */
+    gap: 12px;               /* spacing between elements */
+    background-color: rgb(255, 240, 246);
+    padding: 15px 20px;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 800px;
+    flex-wrap: nowrap;       /* prevent wrapping to next line */
+}
+
+#search-bar input {
+    flex: 2;                 /* input wider than others */
+    min-width: 150px;        /* prevent shrinking too much */
+}
+
+#search-bar select {
+    flex: 1;
+    min-width: 120px;        /* dropdown width */
+}
+
+#search-bar button {
+    flex: 1;
+    min-width: 100px;
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+    #search-bar form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #search-bar input,
+    #search-bar select,
+    #search-bar button {
+        flex: 1;
+    }
+}
+
+
+/*h2 styling*/
+
+h2 {
+    color:black;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* applying grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+/*category*/
+#Categories article {
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(255, 240, 246);
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+/*catogries hover effect*/
+#Categories article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+#Categories p {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/*restaurants*/
+#restaurants article {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.25s ease;
+}
+/*restaurants hover effects*/
+#restaurants article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#restaurants .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    font-weight: 600;
+    color: rgb(231, 51, 112);
+}
+
+#restaurants .desc {
+    padding: 0 15px 15px;
+    font-size: 0.95rem;
+    color: rgb(85, 85, 85);
+}
+
+/*offers */
+.offer-card {
+    background-color: rgb(255, 240, 246);
+    border-radius: 15px;
+    padding: 25px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1rem;
+    transition: all 0.25s ease;
+}
+/*hover effects*/
+.offer-card:hover {
+    background-color: rgb(255, 208, 224);
+}
+
+/*testimonials*/
+#testimonials .review {
+    background-color: rgb(255, 240, 246);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.25s ease;
+}
+
+#testimonials .review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.cust {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: rgb(255, 180, 0);
+}
+
+/*signup form*/
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form select, form button {
+    padding: 12px;
+    border-radius: 30px;
+    border: 1px solid rgb(221, 221, 221);
+    font-size: 1rem;
+}
+
+form button {
+    background-color: rgb(231, 51, 112);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.25s ease;
+}
+/*hover effect*/
+form button:hover {
+    background-color: rgb(231, 51, 112);
+}
+/*footer*/
+footer {
+    padding: 30px 50px;
+    background-color: rgb(255, 208, 224);
+    text-align: center;
+    border-top: 1px solid rgb(238, 238, 238);
+}
+
+footer p {
+    margin-bottom: 15px;
+    color: rgb(85, 85, 85);
+}
+
+footer .social svg {
+    fill: white;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+/*footer hover*/
+footer .social svg:hover {
+    fill: rgb(231, 51, 112);
+}
+
+/*Responsiveness*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    #hero .h, #hero img {
+        max-width: 100%;
+    }
+
+    #filters {
+        display: none; 
+    }
+}
