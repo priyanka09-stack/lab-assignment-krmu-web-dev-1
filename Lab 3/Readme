@@ -1,1 +1,14 @@
+#This is Lab 3 assignment.
+#This is a Responsive Personal Portfolio Website .
+#In this assignment we have applied CSS Advanced to HTML code to make it more responsive,attractive and user friendly.
 
+#Steps to view responsive behaviour 
+1.Open Chrome.
+2.Right-click mouse and tap on inspect.
+3.In developer tool there is device icon ,tap on it .
+4.Now,you can see  mobile ,tablet ,desktop view.
+
+#Breakpoint Tested
+1. Mobile - 608 px
+2.Desktop - 1045 px
+3.Tablet - 815 px
