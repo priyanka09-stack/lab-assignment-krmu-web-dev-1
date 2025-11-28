@@ -1,0 +1,289 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');   
+body{
+    font-family: 'roboto',sans-serif;
+    background: rgb(242, 242, 242);
+    line-height: 1.6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+/*header*/
+header{
+    background: navy;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-size: 1.6rem;
+}
+
+
+/*nav*/
+
+nav{
+    display: flex;
+    gap: 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    transition: 0.3s ease;
+}
+
+nav a:hover{
+    background-color: rgb(240, 248, 255);
+    color:navy;
+    border-radius: 0.3rem;   
+}
+
+/*main contet*/
+
+a[href ="#main content"]{
+    Background-color:navy;
+    color:white;
+    text-decoration: none;
+    
+    border-radius: 4px
+
+
+}
+
+/*hero*/
+
+#hero{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 80px;
+    gap:40px;
+    animation: fadeIn 1s ease forwards;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#hero h2{
+    font-size: 2.2rem;
+}
+
+
+.a1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    animation: colorChange 5s infinite alternate;
+}
+
+@keyframes colorChange {
+    from{ color: blue; }
+    to{ color:black; }
+}
+
+
+.a2{
+    margin-top: 0.6rem;
+    font-size: 1.2rem;
+    color: #444;
+    
+}
+
+#hero img{
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+/*section & h2 - animation effect of slide-in and color chandge*/
+
+section{                                                        
+    padding: 2rem;
+    margin: 1.5rem auto;
+    width: 90%;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+    
+
+
+h2{                                                           
+    animation: colorChange 5s infinite alternate;
+}
+@keyframes colorChange {
+    from{ color: blue; }
+    to{ color:black; }
+}
+
+/*about*/
+
+#About p{
+    text-align: justify;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+}
+
+/*skill*/
+#cad{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.j{
+    background: navy;
+    border: 1px solid white;
+    color:white;
+    padding: 1.2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.3s;
+
+}
+.j:hover{
+    border-radius: 10px;
+    background: grey;
+    transform: scale(1.05)
+
+}
+
+/*project*/
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr;  
+    gap: 1.2rem;                                                                      
+    margin-top: 1rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    width: 80%;                  
+    margin-left: auto;
+    margin-right: auto;     
+}
+
+.h{                                                                             
+
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.h:hover{                                                             
+    border-radius: 10px;
+    background: grey;
+    transform: scale(1.05);
+
+}
+
+
+/*contact*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+}
+
+label{
+    margin: 0.5rem 0 0.2rem;
+}
+
+input, button{
+    padding: 0.7rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button{                                               
+    background-color:navy;
+    transition: 0.3s ease;
+}
+
+button:hover{                                         
+    color:rgb(231, 222, 229);
+    padding: 10px;
+    border-radius: 10px;
+    background:  grey;
+    transform: scale(1.05);
+}
+
+/*back to top*/
+
+a[href="#top"]{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #003180;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/*footer*/
+
+footer{
+
+    background: navy;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+footer a{
+    color: white;
+    margin-left: 5px;
+    text-decoration: none;
+    
+}
+
+a[href*="github.com"]:hover{
+    background-color:white;
+    color:navy;
+    cursor: pointer;
+
+
+
+}
+
+/*responsive page*/
+
+@media(max-width: 768px){
+    #hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero img{
+        margin-top: 1.5rem;
+    }
+}
