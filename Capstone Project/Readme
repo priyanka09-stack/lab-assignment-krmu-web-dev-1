@@ -1,1 +1,18 @@
+#Food Delivary App
+#Foodie
+
+#Features -
+1.Header & Navigation links - Navigation links to navigate through site easily.
+2.Hero section - Profile image + introduction text and animated heading text.
+3.Sections - Catogries , Restaurants ,Promo offers e.t.c - Clean card layouts for good user experience.
+4.Signup Section - Form with field  name, email to sign up.
+5.Back to Top Button - Fixed position button for fast navigation
+6.Footer - GitHub link and footer text.
+
+
+#  Breakpoits tested-
+1.Mobile - 658 px
+2.Tablet - 951 px
+3.Desktop - 1045 px
+
 
