@@ -1,0 +1,12 @@
+#Javascript Console Quiz Game
+
+#Features of Quiz -
+1.Multiple Choice Questions.
+2.Restart Quiz
+3.Hint for incorrect answers
+
+#How to run this file?
+1.Create a .html file.
+2.Connect this file with .html file.
+3.Open HTML file in a browser.
+4.The quiz will start.
